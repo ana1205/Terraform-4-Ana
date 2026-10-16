@@ -1,0 +1,13 @@
+# Copia este archivo a terraform.tfvars y rellena tus valores localmente.
+# No subas terraform.tfvars ni contraseñas a GitHub.
+subscription_id         = "REEMPLAZA_CON_TU_SUBSCRIPTION_ID"
+postgres_admin_password = "REEMPLAZA_CON_UNA_CONTRASENA_SEGURA"
+
+# Para empezar con una configuración de bajo riesgo de cargos, deja los
+# componentes opcionales desactivados. La VNet, NSG, Storage y DNS sí se planifican.
+deploy_bastion                    = false
+deploy_postgres                   = false
+deploy_vm                         = false
+deploy_app_service                = false
+deploy_storage_private_endpoint   = false
+deploy_postgres_private_endpoint  = false
